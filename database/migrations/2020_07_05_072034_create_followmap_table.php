@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateFollowmapTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('iduser');
-            $table->string('username');
-            $table->string('foto')->nullable();
-            $table->rememberToken();
+        Schema::create('followmap', function (Blueprint $table) {
+            $table->unsignedBigInteger('idfollower_map');
+            $table->foreign('idfollower_map')->references('iduser')->on('users');
+            $table->integer('idfollower');
+            $table->integer('idfollowing');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('followmap');
     }
 }

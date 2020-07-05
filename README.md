@@ -51,14 +51,14 @@ Buatlah controller untuk mengatur fitur CRUD artikel.
 
 | url                         | method | keterangan      |
 |----------                   | -------- | -------------- |
-| ```'/'```                   |```GET```| menampilkan gambar PNG/JPG/JPEG desain ERD yang sudah dibuat di soal no. 1  |
-| ```'/artikel' ```        | ```GET``` | menampilkan tabel berisi data artikel-artikel |
-| ```'/artikel/create'```  | ```GET``` | menampilkan form untuk membuat artikel baru  |
-| ```'/artikel'``` | ```POST``` | menyimpan artikel baru 
-| ```'/artikel/{id}'``` | ```GET``` | menampilkan halaman detil (show) untuk artikel dengan id tertentu
+| ```'/'```                  |```GET```| menampilkan gambar PNG/JPG/JPEG desain ERD yang sudah dibuat di soal no. 1  |
+| ```'/artikel' ```          | ```GET``` | menampilkan tabel berisi data artikel-artikel |
+| ```'/artikel/create'```    | ```GET``` | menampilkan form untuk membuat artikel baru  |
+| ```'/artikel'```           | ```POST``` | menyimpan artikel baru 
+| ```'/artikel/{id}'```      | ```GET``` | menampilkan halaman detil (show) untuk artikel dengan id tertentu
 | ```'/artikel/{id}/edit'``` | ```GET``` | menampilkan halaman form edit untuk artikel dengan id tertentu
-| ```'/artikel/{id}'``` | ```PUT``` | menyimpan data dari form edit 
-| ```'/artikel/{id}'``` | ```DELETE``` | menghapus data dengan id tertentu
+| ```'/artikel/{id}'```      | ```PUT``` | menyimpan data dari form edit 
+| ```'/artikel/{id}'```      | ```DELETE``` | menghapus data dengan id tertentu
 
 - pasangkanlah script berikut ini ke HANYA ke halaman blade untuk menampilkan data pada tabel artikel (pada url ```'/artikel'```). (10 poin)
 
